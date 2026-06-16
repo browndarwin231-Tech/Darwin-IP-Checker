@@ -1,0 +1,14 @@
+ip = input("Enter IP address: ")
+
+if ip == "127.0.0.1":
+    print("Localhost")
+elif ip.startswith("192.168."):
+    print("Private Network IP")
+elif ip.startswith("10."):
+    print("Private Network IP")
+elif ip.startswith("172."):
+    print("Private Network IP")
+else:
+    print("Public IP Address")
+
+print("Created by Darwin Brown")
